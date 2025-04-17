@@ -1,12 +1,195 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|c:\\users\\arda\\source\\repos\\kitaphanem\\kitaphanem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|c:\\users\\arda\\source\\repos\\kitaphanem\\kitaphanem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|c:\\users\\arda\\source\\repos\\kitaphanem\\kitaphanem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|c:\\users\\arda\\source\\repos\\kitaphanem\\kitaphanem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|c:\\users\\arda\\source\\repos\\kitaphanem\\kitaphanem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|c:\\users\\arda\\source\\repos\\kitaphanem\\kitaphanem\\controllers\\accountcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|solutionrelative:controllers\\accountcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|c:\\users\\arda\\source\\repos\\kitaphanem\\kitaphanem\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|c:\\users\\arda\\source\\repos\\kitaphanem\\kitaphanem\\controllers\\bookcontollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|solutionrelative:controllers\\bookcontollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|c:\\users\\arda\\source\\repos\\kitaphanem\\kitaphanem\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|c:\\users\\arda\\source\\repos\\kitaphanem\\kitaphanem\\wwwroot\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EF7DF085-E608-4B86-8969-C8611BE1AFC5}|Kitaphanem.csproj|solutionrelative:wwwroot\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 187,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T18:27:47.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T18:25:21.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "book.cs",
+              "DocumentMoniker": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Models\\book.cs",
+              "RelativeDocumentMoniker": "Models\\book.cs",
+              "ToolTip": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Models\\book.cs",
+              "RelativeToolTip": "Models\\book.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T18:12:09.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "user.cs",
+              "DocumentMoniker": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Models\\user.cs",
+              "RelativeDocumentMoniker": "Models\\user.cs",
+              "ToolTip": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Models\\user.cs",
+              "RelativeToolTip": "Models\\user.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T16:59:26.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\wwwroot\\js\\main.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\main.js",
+              "ToolTip": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\wwwroot\\js\\main.js",
+              "RelativeToolTip": "wwwroot\\js\\main.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-17T14:50:19.281Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 213,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T18:45:50.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "accountController1.cs",
+              "DocumentMoniker": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Controllers\\accountController1.cs",
+              "RelativeDocumentMoniker": "Controllers\\accountController1.cs",
+              "ToolTip": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Controllers\\accountController1.cs",
+              "RelativeToolTip": "Controllers\\accountController1.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwEMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T17:09:14.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T18:41:06.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "bookContollers.cs",
+              "DocumentMoniker": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Controllers\\bookContollers.cs",
+              "RelativeDocumentMoniker": "Controllers\\bookContollers.cs",
+              "ToolTip": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\Controllers\\bookContollers.cs",
+              "RelativeToolTip": "Controllers\\bookContollers.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwCoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T18:52:36.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\Arda\\source\\repos\\kitaphanem\\Kitaphanem\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-17T14:57:11.76Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -15,6 +15,7 @@ namespace Kitaphanem.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.UserName = TempData["KullanýcýAdý"];
             return View();
         }
 

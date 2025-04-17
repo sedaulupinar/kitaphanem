@@ -1,0 +1,23 @@
+﻿@model Kitaphanem.Models.User
+
+<h2>Kayıt Ol</h2>
+
+<form method="post">
+    <div>
+        <label for="FullName">Ad Soyad</label>
+        <input asp-for="TamAd" placeholder="Ad Soyad" required />
+    </div>
+    <div>
+        <label for="Email">E-posta</label>
+        <input asp-for="Email" type="email" placeholder="E-posta" required />
+    </div>
+    <div>
+        <label for="Phone">Telefon</label>
+        <input asp-for="Telefon" placeholder="Telefon" required />
+    </div>
+    <div>
+        <label for="şifre">Şifre</label>
+        <input asp-for="şifre" type="password" placeholder="Şifre" required />
+    </div>
+    <button type="submit">Kayıt Ol</button>
+</form>
