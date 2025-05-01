@@ -1,0 +1,67 @@
+﻿@model Kitaphanem.Models.Book
+
+@{
+    ViewData["Title"] = "Kitap Ekle";
+    Layout = "_Layout";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card bg-light text-dark p-4" style="width: 100%; max-width: 550px; border-radius: 10px;">
+        <h3 class="text-center mb-4">Kitap Ekle</h3>
+
+        <form method="post">
+            <div class="mb-3">
+                <label for="bookTitle" class="form-label">Kitap Adı</label>
+                <input type="text" class="form-control" id="bookTitle" name="Title" placeholder="Kitap Adını Girin" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="bookAuthor" class="form-label">Yazar</label>
+                <input type="text" class="form-control" id="bookAuthor" name="Author" placeholder="Yazarın Adını Girin" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="bookCategory" class="form-label">Kategori</label>
+                <input type="text" class="form-control" id="bookCategory" name="Category" placeholder="Kitap Kategorisini Girin" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="bookDescription" class="form-label">Açıklama</label>
+                <textarea class="form-control" id="bookDescription" name="Description" rows="3" placeholder="Kitap Açıklamasını Girin" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="bookPrice" class="form-label">Fiyat</label>
+                <input type="number" class="form-control" id="bookPrice" name="Price" placeholder="Kitap Fiyatını Girin" step="0.01" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="bookImageUrl" class="form-label">Kitap Resmi URL</label>
+                <input type="text" class="form-control" id="bookImageUrl" name="ImageUrl" placeholder="Kitap Resmi URL " />
+            </div>
+
+            <!-- Önizleme görseli -->
+            <div class="text-center mt-3">
+                <img id="previewImage" src="#" alt="Kitap Önizleme" class="img-preview" style="display:none; width: 100%; max-width: 200px;" />
+            </div>
+
+            <button type="submit" class="btn btn-dark w-100 mt-4">Kitap Ekle</button>
+        </form>
+    </div>
+</div>
+
+<!-- Görsel önizleme için script -->
+<script>
+    const imageUrlInput = document.getElementById("bookImageUrl");
+    const previewImage = document.getElementById("previewImage");
+
+    imageUrlInput.addEventListener("input", () => {
+        const url = imageUrlInput.value.trim();
+        if (url) {
+            previewImage.src = url;
+            previewImage.style.display = "block";
+        } else {
+            previewImage.style.display = "none";
+        }
+    });
+</script>

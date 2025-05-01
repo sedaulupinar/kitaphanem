@@ -1,0 +1,151 @@
+﻿/* ===== GENEL AYARLAR ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif; /* Body'nin yazı tipi */
+    background-color: #f4f7fb; /* Sayfa genel arka plan rengi */
+    color: #333; /* Metin rengi */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    body.dark-theme {
+        background-color: #121212;
+        color: #f8f9fa;
+    }
+
+/* ===== ORTAK NAVBAR STİLİ ===== */
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #343a40; /* Koyu gri */
+    color: white; /* Yazı rengi */
+}
+
+    .navbar.dark-theme {
+        background-color: #1e1e1e; /* Koyu tema navbar */
+    }
+
+    .navbar .navbar-brand {
+        font-size: 2rem; /* Logo büyütüldü */
+        font-weight: 600;
+        color: white;
+    }
+
+    .navbar .nav-link {
+        color: white;
+        font-size: 1rem;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+        .navbar .nav-link:hover {
+            color: #ffc107; /* Sarımsı tonla hoş bir kontrast */
+            background-color: transparent;
+            transform: scale(1.1);
+        }
+
+
+/* ===== KİTAP KARTI GENEL TASARIM ===== */
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card.dark-theme {
+        background-color: #1e1e1e;
+        color: #f8f9fa;
+    }
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* ===== KİTAP GÖRSELLERİ ===== */
+.book-image {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+}
+
+/* ===== BUTON STİLLERİ ===== */
+.btn-primary {
+    background-color: #28a745; /* Yeşil renk */
+    border-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+    .btn-primary.dark-theme {
+        background-color: #218838; /* Koyu temada yeşil tonu */
+    }
+
+    .btn-primary:hover {
+        background-color: #218838; /* Yeşil tonunda hover */
+        border-color: #1e7e34;
+        transform: scale(1.1);
+    }
+
+/* ===== DETAY, GÜNCELLE, FAVORİLER BUTONLARI ===== */
+.btn-detail, .btn-update, .btn-favorite, .btn-delete {
+    background-color: #28a745; /* Yeşil */
+    border-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-favorite {
+    background-color: #ffc107; /* Sarımsı ton */
+    border-color: #ffc107;
+}
+
+    .btn-favorite.dark-theme {
+        background-color: #e0a800;
+        border-color: #c69500;
+    }
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .add-to-cart.dark-theme {
+        background-color: #444; /* Koyu temada daha koyu buton */
+    }
+
+    .add-to-cart:hover {
+        transform: scale(1.08);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .add-to-cart i {
+        margin-right: 10px;
+    }

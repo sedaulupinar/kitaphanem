@@ -1,0 +1,14 @@
+﻿@model Kitaphanem.Models.Book
+
+<h2>Kitap Detayı</h2>
+
+<div>
+    <h3>@Model.Title</h3>
+    <p><strong>Yazar:</strong> @Model.Author</p>
+    <p><strong>Kategori:</strong> @Model.Category</p>
+    <p><strong>Açıklama:</strong> @Model.Description</p>
+    <p><strong>Fiyat:</strong> @Model.price</p>
+    <img src="@Model.ImageUrl" alt="@Model.Title" width="200" />
+</div>
+
+<a href="@Url.Action("Index", "Book")">Geri dön</a>

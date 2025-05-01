@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Sayfa genel arka plan rengi */
+        body {
+            background-color: #343a40b; /*arka plan rengi*/
+            color: #333; /* Yazı rengi koyu gri */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sayfanın içerik kısmı için düzenleme */
+        .content {
+            padding-top: 50px; /* Üstten boşluk */
+            text-align: center; /* Metni ortala */
+        }
+
+        /* Sayfanın butonu ve metin stili */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #004085;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h2>Hoş geldin, @ViewBag.UserName!</h2>
+        <p>İkinci el kitaplarını buradan yönetebilirsin.</p>
+        <a class="btn btn-primary" href="@Url.Action("AddBook", "Book")">Yeni Kitap Ekle</a>
+    </div>
+
+</body>
+</html>

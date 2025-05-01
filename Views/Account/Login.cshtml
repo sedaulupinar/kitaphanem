@@ -1,0 +1,18 @@
+﻿<h2>Giriş Yap</h2>
+
+<form method="post">
+    <div>
+        <label for="Email">E-posta</label>
+        <input name="email" placeholder="E-posta" required />
+    </div>
+    <div>
+        <label for="Password">Şifre</label>
+        <input name="password" type="password" placeholder="Şifre" required />
+    </div>
+    <button type="submit">Giriş Yap</button>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}

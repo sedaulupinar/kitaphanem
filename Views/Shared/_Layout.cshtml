@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Kitaphanem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="~/css/kitaphanem.logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+    <style>
+        body {
+            font-family: 'Lora', serif;
+        }
+
+        h1, h2, h3, h4, .card-title, .btn, .navbar-brand, .nav-link {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .custom-navbar {
+            background-color: #343a40; /* Koyu gri */
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important; /* Yazılar beyaz */
+        }
+
+            .nav-link:hover {
+                color: #ffc107 !important; /* Hover'da sarımsı renk */
+            }
+
+        .navbar-logo {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        /* Dark theme style */
+        body.dark-theme {
+            background-color: #121212;
+            color: white;
+        }
+
+        .dark-theme .navbar {
+            background-color: #1a1a1a;
+        }
+
+        .dark-theme .card {
+            background-color: #2c2c2c;
+            border-color: #444;
+        }
+
+        .dark-theme .btn-primary {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+
+        .dark-theme .nav-link {
+            color: white !important;
+        }
+
+        /* Hamburger menu icon */
+        .navbar-toggler {
+            border-color: white;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28 255, 255, 255, 1 %29)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        /* Sağ hizalama hem mobilde hem bilgisayarda */
+        .navbar-nav {
+            margin-left: auto; /* Menü elemanlarını sağa hizalar */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="~/css/kitaphanem.logo.png" alt="Kitaphanem Logo" class="navbar-logo" />
+                Kitaphanem
+            </a>
+            <!-- Hamburger butonu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menü içeriği -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Index">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Book/AddBook">Kitap Ekle</a>
+                    </li>
+
+                    @if (Context.Session.GetString("UserEmail") != null)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Account/Logout">Çıkış Yap</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Account/Login">Giriş Yap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Account/Register">Kayıt Ol</a>
+                        </li>
+                    }
+
+                    <li class="nav-item">
+                        <button id="themeToggle" class="btn btn-outline-light ms-2">🌙</button>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="@Url.Action("Cart", "Book")" class="btn btn-primary ms-2">
+                            <i class="fas fa-shopping-cart"></i> Sepete Git
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sayfa içeriği -->
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <!-- Bootstrap JS (Popper dahil) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tema Değiştirme Scripti -->
+    <script>
+        const themeToggle = document.getElementById("themeToggle");
+        const body = document.body;
+
+        // Önceki tema varsa onu yükle
+        const currentTheme = localStorage.getItem("theme") || "light";
+        body.classList.add(`${currentTheme}-theme`);
+        themeToggle.innerHTML = currentTheme === "dark" ? "☀️" : "🌙";
+
+        themeToggle.addEventListener("click", () => {
+            if (body.classList.contains("light-theme")) {
+                body.classList.replace("light-theme", "dark-theme");
+                themeToggle.innerHTML = "☀️";
+                localStorage.setItem("theme", "dark");
+            } else {
+                body.classList.replace("dark-theme", "light-theme");
+                themeToggle.innerHTML = "🌙";
+                localStorage.setItem("theme", "light");
+            }
+        });
+    </script>
+</body>
+</html>

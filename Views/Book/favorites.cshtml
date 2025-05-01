@@ -1,0 +1,57 @@
+﻿@using System.Linq
+@model List<Kitaphanem.Models.Book>
+
+@{
+    ViewData["Title"] = "Favoriler";
+    Layout = "_Layout";
+}
+
+<div class="container py-4">
+    <!-- Başlık -->
+    <div class="mb-2">
+        <h2>Favori Kitaplar</h2>
+    </div>
+
+    <!-- Geri Dön Butonu -->
+    <div class="mb-4">
+        <a href="@Url.Action("Index", "Book")" class="btn btn-light">
+            <span style="font-size: 1.2em;">&#8592;</span> Kitaplara Geri Dön
+        </a>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-secondary text-white">
+                        @if (!string.IsNullOrEmpty(item.ImageUrl))
+                        {
+                            <img src="@item.ImageUrl" class="card-img-top" alt="Kitap Görseli" style="max-height: 220px; width: 100%; object-fit: contain;" />
+                        }
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold; color: #fff;">@item.Title</h5>
+                            <p class="card-text">
+                                <strong style="color: #f0f0f0;">Yazar:</strong> <span style="color: #f0f0f0;">@item.Author</span><br />
+                                <strong style="color: #f0f0f0;">Kategori:</strong> <span style="color: #f0f0f0;">@item.Category</span><br />
+                                <strong style="color: #f0f0f0;">Açıklama:</strong> <span style="color: #f0f0f0;">@item.Description</span><br />
+                                <strong style="color: #f0f0f0;">Fiyat:</strong> <span style="color: #f0f0f0;">@item.price</span><br />
+                            </p>
+
+                            <a href="@Url.Action("Details", "Book", new { id = item.Id })" class="btn btn-info">Detay</a>
+
+                            <form method="post" action="@Url.Action("RemoveFromFavorites", "Book", new { id = item.Id })" style="display:inline;">
+                                <button type="submit" class="btn btn-danger ml-2" onclick="return confirm('Favorilerden kaldırmak istediğinize emin misiniz?')">Favorilerden Kaldır</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p class="text-center">Favori kitaplarınız bulunmamaktadır.</p>
+    }
+</div>

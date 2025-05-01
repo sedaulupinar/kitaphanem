@@ -1,0 +1,32 @@
+﻿@model Kitaphanem.Models.User
+
+<h2>Kayıt Ol</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div style="color:red; margin-bottom:10px;">@ViewBag.Error</div>
+}
+
+<form method="post">
+    <div>
+        <label for="TamAd">Ad Soyad</label>
+        <input asp-for="TamAd" placeholder="Ad Soyad" required />
+    </div>
+
+    <div>
+        <label for="Email">E-posta</label>
+        <input asp-for="Email" type="email" placeholder="E-posta" required />
+    </div>
+
+    <div>
+        <label for="Telefon">Telefon</label>
+        <input asp-for="Telefon" placeholder="Telefon" required />
+    </div>
+
+    <div>
+        <label for="PasswordHash">Şifre</label>
+        <input asp-for="PasswordHash" type="password" placeholder="Şifre (En az 8 karakter, harf ve rakam içermeli)" required />
+    </div>
+
+    <button type="submit">Kayıt Ol</button>
+</form>
